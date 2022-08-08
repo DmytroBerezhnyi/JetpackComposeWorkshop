@@ -1,4 +1,4 @@
-package com.ukraine.kharkivmyr.navigation.components
+package com.example.jetpackcomposeworkshop.navigation.components
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavBackStackEntry

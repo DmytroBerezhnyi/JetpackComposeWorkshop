@@ -1,6 +1,6 @@
 package com.example.jetpackcomposeworkshop.navigation
 
-import android.content.Intent
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
@@ -14,7 +14,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.jetpackcomposeworkshop.navigation.routes.*
 import com.example.jetpackcomposeworkshop.ui.theme.JetpackComposeWorkshopTheme
-import com.ukraine.kharkivmyr.navigation.components.composable
+import com.example.jetpackcomposeworkshop.navigation.components.composable
 
 @Composable
 fun RootScreen() {
@@ -34,7 +34,10 @@ fun RootScreen() {
             ) {
 
                 composable(SplashRoute) {
-                    Text(text = "SplashRoute")
+                    Text(
+                        modifier = Modifier.clickable { SplashRoute.navigateToLoginRouteScreen(navController) },
+                        text = "SplashRoute"
+                    )
                 }
 
                 composable(LoginRoute) {
