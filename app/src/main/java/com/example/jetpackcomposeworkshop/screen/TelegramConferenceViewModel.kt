@@ -26,17 +26,19 @@ class TelegramConferenceViewModel @Inject constructor() : ViewModel() {
     }
 
     fun muteParticipant(participant: Participant) {
-        val participantIndex = participants.indexOf(participant)
+        viewModelScope.launch {
+            val participantIndex = participants.indexOf(participant)
 
-        participants = participants.minus(participant)
-            .toMutableList().apply {
-                add(
-                    participantIndex,
-                    participant.copy(
-                        isSpeakingAllowed = participant.isSpeakingAllowed.not(),
-                        isSpeaking = false
+            participants = participants.minus(participant)
+                .toMutableList().apply {
+                    add(
+                        participantIndex,
+                        participant.copy(
+                            isSpeakingAllowed = participant.isSpeakingAllowed.not(),
+                            isSpeaking = false
+                        )
                     )
-                )
-            }
+                }
+        }
     }
 }
