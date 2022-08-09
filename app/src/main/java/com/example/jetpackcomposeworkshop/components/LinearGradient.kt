@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeworkshop
+package com.example.jetpackcomposeworkshop.components
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.Stable

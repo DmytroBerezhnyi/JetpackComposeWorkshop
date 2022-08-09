@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeworkshop.navigation
+package com.example.jetpackcomposeworkshop.not_used_bu_interesting.navigation
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel

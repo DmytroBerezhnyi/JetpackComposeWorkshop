@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeworkshop.navigation
+package com.example.jetpackcomposeworkshop.not_used_bu_interesting.navigation
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.padding
@@ -12,9 +12,12 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.jetpackcomposeworkshop.navigation.routes.*
 import com.example.jetpackcomposeworkshop.ui.theme.JetpackComposeWorkshopTheme
-import com.example.jetpackcomposeworkshop.navigation.components.composable
+import com.example.jetpackcomposeworkshop.not_used_bu_interesting.navigation.components.composable
+import com.example.jetpackcomposeworkshop.not_used_bu_interesting.navigation.routes.CharacterDetailsRoute
+import com.example.jetpackcomposeworkshop.not_used_bu_interesting.navigation.routes.LoginRoute
+import com.example.jetpackcomposeworkshop.not_used_bu_interesting.navigation.routes.MainRoute
+import com.example.jetpackcomposeworkshop.not_used_bu_interesting.navigation.routes.SplashRoute
 
 @Composable
 fun RootScreen() {

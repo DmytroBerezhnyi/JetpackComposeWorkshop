@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeworkshop.navigation.routes
+package com.example.jetpackcomposeworkshop.not_used_bu_interesting.navigation.routes
 
 import androidx.navigation.NavController
 

@@ -1,3 +1,0 @@
-package com.example.jetpackcomposeworkshop.navigation.routes
-
-interface IRouteParams

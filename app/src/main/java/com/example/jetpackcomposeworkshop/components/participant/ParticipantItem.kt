@@ -1,5 +1,6 @@
 package com.example.jetpackcomposeworkshop.components.participant
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
@@ -18,7 +19,7 @@ import com.example.jetpackcomposeworkshop.components.text.TelegramBio
 import com.example.jetpackcomposeworkshop.model.Participant
 
 @Composable
-fun ParticipantItem(participant: Participant) {
+fun ParticipantItem(participant: Participant, onMuteClicked: (Participant) -> Unit) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -35,7 +36,9 @@ fun ParticipantItem(participant: Participant) {
         Spacer(modifier = Modifier.weight(1f))
 
         Icon(
-            modifier = Modifier.padding(horizontal = 16.dp),
+            modifier = Modifier
+                .padding(horizontal = 16.dp)
+                .clickable(onClick = { onMuteClicked(participant) }),
             imageVector = if (participant.isSpeakingAllowed) Icons.Default.MicNone else Icons.Default.MicOff,
             tint = when {
                 participant.isSpeaking -> Color(0xFF89D48D)

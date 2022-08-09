@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeworkshop.components
+package com.example.jetpackcomposeworkshop.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -18,7 +18,7 @@ import androidx.compose.ui.graphics.TileMode
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.jetpackcomposeworkshop.R
-import com.example.jetpackcomposeworkshop.linearGradient
+import com.example.jetpackcomposeworkshop.components.linearGradient
 
 @Composable
 fun HandUpComponent(modifier: Modifier, onClicked: () -> Unit) {

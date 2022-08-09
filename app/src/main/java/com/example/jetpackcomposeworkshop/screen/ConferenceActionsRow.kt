@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeworkshop.components
+package com.example.jetpackcomposeworkshop.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -15,9 +15,9 @@ import androidx.compose.ui.unit.dp
 import com.example.jetpackcomposeworkshop.components.button.CircleButton
 
 @Composable
-fun BoxScope.ActionsRow() {
+fun BoxScope.ConferenceActionsRow() {
     Row(
-        Modifier
+        modifier = Modifier
             .fillMaxWidth()
             .height(220.dp)
             .background(
@@ -26,7 +26,6 @@ fun BoxScope.ActionsRow() {
                         Color.Transparent,
                         Color.Black.copy(alpha = 1f),
                     ),
-                    startY = 230f,
                 )
             )
             .align(Alignment.BottomCenter),
