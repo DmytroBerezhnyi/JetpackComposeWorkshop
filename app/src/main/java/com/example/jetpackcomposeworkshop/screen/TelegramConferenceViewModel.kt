@@ -32,7 +32,10 @@ class TelegramConferenceViewModel @Inject constructor() : ViewModel() {
             .toMutableList().apply {
                 add(
                     participantIndex,
-                    participant.copy(isSpeakingAllowed = participant.isSpeakingAllowed.not())
+                    participant.copy(
+                        isSpeakingAllowed = participant.isSpeakingAllowed.not(),
+                        isSpeaking = false
+                    )
                 )
             }
     }
